@@ -1,4 +1,4 @@
-# p2p-Mesh-Network (v0.1.0-alpha)
+# p2p-Mesh-Network (v0.1.0)
 
 A localized, decentralized peer-to-peer file transfer system. It streams data directly between devices on the same network using a high-performance Go networking engine and a clean Flutter mobile client.
 
