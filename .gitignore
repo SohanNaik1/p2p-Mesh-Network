@@ -1,22 +1,55 @@
-cat << 'EOF' > .gitignore
-# Block test artifacts and trash binaries
-*.aar
-*.png
-*.jpeg
-*.jpg
-*.mkv
-secret.txt
-backend/backend-sources.jar
-
-# Block non-mobile frontend platforms entirely
-frontend/macos/
-frontend/linux/
-frontend/windows/
-frontend/web/
-
-# Block Flutter build noise
+# Absolute root .gitignore additions
 frontend/.dart_tool/
+frontend/.packages
 frontend/.pub-cache/
 frontend/.pub/
 frontend/build/
-EOF
+frontend/linux/flutter/
+frontend/macos/Flutter/ephemeral/
+frontend/windows/flutter/
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+frontend/.dart_tool/
+frontend/.flutter-plugins-dependencies
+frontend/.pub-cache/
+frontend/.pub/
+frontend//build/
+frontend//coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+frontend/android/app/debug
+frontend/android/app/profile
+frontend/android/app/release
